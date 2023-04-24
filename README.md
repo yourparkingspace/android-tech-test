@@ -1,25 +1,23 @@
 # YourParkingSpace Android Tech Test
 
 ## Scenario
-You are asked to build a very simple app, which allows the user to view submissions to the r/Android subreddit. 
+You are asked to build a simple app, which allows the user to view posts submitted to the r/Android subreddit. 
 
 ## What we require
 You will build an app that works across a range of device sizes.
 
-The app will load the current hot submissions from the Android subreddit. You can use [https://www.reddit.com/r/Android/hot.json](https://www.reddit.com/r/Android/hot.json) to get posts.
+The app will load the current hot submissions from the Android subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/Android/hot.json](https://www.reddit.com/r/Android/hot.json) to get posts.
 
-The posts will be displayed in a list view. 
 
-If the user scrolls to the bottom of the list, the app should load the next page of results.
-
-If the user taps on a post, they should be taken to that post on reddit.
-
-Each post should give attribution to the author
+1. Fetch and display posts in a vertical scrolling list with the most recent first on app open, with a loading indicator during the fetch operation. 
+2. If the user scrolls to the bottom of the list, the app should load the next page of results (Refer to the API docs for pagination details).
+3. If the user taps on a post, they should be taken to the details of the post on reddit.
+4. Each post should give attribution to the author
 
 ## Expectations
-* Well structured, reusable code that is maintainable.
-* Spend no more than 5 hours completing this task.
-* Regular commits to Git with meaningful messages.
+* Usage of a layered MVVM or Clean architecture, with Coroutines and Jetpack Compose.
+* Well structured, reusable code that is maintainable and testable.
+* Regular small commits to Git with meaningful messages.
 * We expect you to use the latest release version of Android Studio.
 
 ## What to submit
@@ -31,6 +29,7 @@ Each post should give attribution to the author
 
 ## Bonus Points
 
-* While you won't be assessed on your design choices, Its always good to have a nice looking app.
 * Unit Tests
 * Offline support / caching
+* While you won't be assessed on your design choices, Its always good to have a nicer looking UI that scales well for different screen sizes or orientation.
+
