@@ -1,12 +1,12 @@
 # YourParkingSpace Android Tech Test
 
 ## Scenario
-You are asked to build a simple app, which allows the user to view posts submitted to the r/Android subreddit. 
+You are asked to build a simple app, which allows the user to view posts submitted to the `r/technology` subreddit. 
 
 ## What we require
 You will build an app that works across a range of device sizes.
 
-The app will load the current hot submissions from the Android subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/Android/hot.json](https://www.reddit.com/r/Android/hot.json) to get posts.
+The app will load the current hot submissions from the Technology subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/technology/hot.json](https://www.reddit.com/r/technology/hot.json) to get posts.
 
 
 1. Fetch and display posts in a vertical scrolling list with the most recent first on app open, with a loading indicator during the fetch operation. 
