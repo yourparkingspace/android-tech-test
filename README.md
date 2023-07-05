@@ -9,10 +9,12 @@ You will build an app that works across a range of device sizes.
 The app will load the current hot submissions from the Technology subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/technology/hot.json](https://www.reddit.com/r/technology/hot.json) to get posts.
 
 
-1. Fetch and display posts in a vertical scrolling list with the most recent first on app open, with a loading indicator during the fetch operation. 
-2. If the user scrolls to the bottom of the list, the app should load the next page of results (Refer to the API docs for pagination details).
-3. If the user taps on a post, they should be taken to the details of the post on reddit.
-4. Each post should give attribution to the author
+1. Fetch and display posts in a vertical scrolling list with the most recent first on app open, with a loading indicator during the fetch operation.
+2. If the user scrolls to the bottom of the list, the app should load the next page of results (Refer to the API docs for pagination details). We would prefer if you DO NOT use the android paging library for handling this.
+3. Support pull to refresh, such that all posts are cleared and the latest first page of data is fetched again.
+4. If the user taps on a post, they should be taken to the details of the post on reddit.
+5. Each post should give attribution to the author and show the posted duration timestamp.
+6. Handling errors and loss of network connection.
 
 ## Expectations
 * Usage of a layered MVVM or Clean architecture, with Coroutines and Jetpack Compose.
