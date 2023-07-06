@@ -3,18 +3,17 @@
 ## Scenario
 You are asked to build a simple app, which allows the user to view posts submitted to the `r/technology` subreddit. 
 
-## What we require
-You will build an app that works across a range of device sizes.
-
-The app will load the current hot submissions from the Technology subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/technology/hot.json](https://www.reddit.com/r/technology/hot.json) to get posts.
+## Requirements
+The app will load and display the current hot posts from the Technology subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/technology/hot.json](https://www.reddit.com/r/technology/hot.json) to get posts.
 
 
 1. Fetch and display posts in a vertical scrolling list with the most recent first on app open, with a loading indicator during the fetch operation.
-2. If the user scrolls to the bottom of the list, the app should load the next page of results (Refer to the API docs for pagination details). We would prefer if you DO NOT use the android paging library for handling this.
-3. Support pull to refresh, such that all posts are cleared and the latest first page of data is fetched again.
-4. If the user taps on a post, they should be taken to the details of the post on reddit.
-5. Each post should give attribution to the author and show the posted duration timestamp.
+2. Each post item should display the author, posted duration timestamp, title, image, link flair label and show a numeric index number indicating it's position in the displayed list.
+3. If the user scrolls to the bottom of the list, the app should load the next page of results (Refer to the API docs for pagination details). We would prefer if you DO NOT use the android paging library for handling this.
+4. Support pull to refresh, such that all posts are cleared and the latest first page of data is fetched again.
+5. If the user taps on a post, they should be taken to a post details screen showing full timestamp when the post was created, number of up votes and down votes, number of comments in addition to all info on the list item.
 6. Handling errors and loss of network connection.
+7. Unit Tests
 
 ## Expectations
 * Usage of a layered MVVM or Clean architecture, with Coroutines and Jetpack Compose.
@@ -28,10 +27,10 @@ The app will load the current hot submissions from the Technology subreddit usin
 ```git bundle create <yourname>.bundle --all --branches```
 
 * A covering note that explains the technology choices you have made
+* IMPORTANT NOTE: If you create an online repository for this task on Github, Bitbucket, etc kindly ensure that it is kept `private` at all times.
 
 ## Bonus Points
 
-* Unit Tests
 * Offline support / caching
-* While you won't be assessed on your design choices, Its always good to have a nicer looking UI that scales well for different screen sizes or orientation.
+* While you won't be assessed on your design choices, Its always good to have a nicer looking UI that handles missing images and scales well for different screen sizes or orientation.
 
