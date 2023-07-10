@@ -1,10 +1,10 @@
 # YourParkingSpace Android Tech Test
 
 ## Scenario
-You are asked to build a simple app, which allows the user to view posts submitted to the `r/technology` subreddit. 
+You are asked to build a simple app, which allows the user to view new posts submitted to the `r/technology` subreddit. 
 
 ## Requirements
-The app will load and display the current hot posts from the Technology subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/technology/hot.json](https://www.reddit.com/r/technology/hot.json) to get posts.
+The app will load and display the new posts from the Technology subreddit using the [Reddit API](https://www.reddit.com/dev/api/). You can use [https://www.reddit.com/r/technology/new.json](https://www.reddit.com/r/technology/new.json) to get posts.
 
 
 1. Fetch and display posts in a vertical scrolling list with the most recent first on app open, with a loading indicator during the fetch operation.
