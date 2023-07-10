@@ -27,7 +27,7 @@ The app will load and display the new posts from the Technology subreddit using 
 ```git bundle create <yourname>.bundle --all --branches```
 
 * A covering note that explains the technology choices you have made
-* IMPORTANT NOTE: If you create an online repository for this task on Github, Bitbucket, etc kindly ensure that it is kept `private` at all times.
+* #### IMPORTANT NOTE: If you create an online repository for this task on Github, Bitbucket, etc kindly ensure that it is kept `private` at all times.
 
 ## Bonus Points
 
