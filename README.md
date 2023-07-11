@@ -16,8 +16,10 @@ The app will load and display the new posts from the Technology subreddit using 
 7. Unit Tests
 
 ## Expectations
-* Usage of a layered MVVM or Clean architecture, with Coroutines and Jetpack Compose.
-* Well structured, reusable code that is maintainable and testable.
+* Usage of a layered MVVM or Clean architecture, with well-defined data, domain and presentation layers.
+* Good use of Jetpack Compose and Coroutines.
+* Proper use of abstraction and dependency injection for making code easily testable.
+* Well structured, reusable code that is easy to understand and maintain with good separation of concerns.
 * Regular small commits to Git with meaningful messages.
 * We expect you to use the latest release version of Android Studio.
 
